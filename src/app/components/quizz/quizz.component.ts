@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import quizz_questions from "../../../assets/data/quizz_questions.json";
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-quizz',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './quizz.component.html',
   styleUrl: './quizz.component.css'
 })
@@ -44,7 +44,8 @@ export class QuizzComponent implements OnInit{
 
   playerChoose(value:string){
     this.answers.push(value)
-    
+    this.nextStep()
+
   }
 
   async nextStep(){
@@ -53,9 +54,34 @@ export class QuizzComponent implements OnInit{
     if(this.questionMaxIndex > this.questionIndex){
       this.questionSelected = this.questions[this.questionIndex]
     }else{
+      const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
+      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results]
     }
 
   }
+
+  async checkResult(answers:string[]){
+
+    const result = answers.reduce((previous, current, i, arra)=>{
+      if(arra.filter(item => item === previous).length > arra.filter(item => item === current).length){
+        return previous
+      }else{
+        return current
+      }
+    })
+    return result
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 }

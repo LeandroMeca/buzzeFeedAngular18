@@ -1,55 +1,109 @@
 {
-    "title":"Você seria um heroi ou vilão ?",
-    "questions":[
-      {
-        "id":1,
-        "question": "Qual super poder você escolheria ?",
-        "options":[
-          {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-          {"id": 2, "name":"Voar", "alias":"B"},
-          {"id": 3, "name":"Explodir coisas", "alias":"A"},
-          {"id": 4, "name":"Curar feridas", "alias":"B"},
-          {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
-        ]
-      },
-      {
-        "id":2,
-        "question": "Quem você salvaria primeiro ?",
-        "options":[
-          {"id": 1, "name":"Crianças", "alias":"A"},
-          {"id": 2, "name":"Idosos", "alias":"A"},
-          {"id": 3, "name":"Não saberia escolher", "alias":"B"}
-        ]
-      },
-      {
-        "id":3,
-        "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-        "options":[
-          {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-          {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-          {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-          {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
-        ]
-      },
-      {
-        "id":4,
-        "question": "Qual o seu maior foco ?",
-        "options":[
-          {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-          {"id": 2, "name":"Salvar a cidade", "alias":"B"}
-        ]
-      },
-      {
-        "id":5,
-        "question": "Qual o seu apelido de super ser ?",
-        "options":[
-          {"id": 1, "name":"O Terrivel", "alias":"A"},
-          {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
-        ]
-      }
-    ],
-    "results":{
-      "A": "Você muito provavelmente seria um super vilão!",
-      "B": "Você muito provavelmente seria um super Herói!"
+  "title": "Você tem perfil de Front-end, Back-end ou Analista de Dados?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Como você lida com a interação do usuário com o sistema?",
+      "options": [
+        {"id": 1, "name": "Fico focado em como os usuários irão interagir visualmente com a interface, garantindo uma experiência fluida e agradável", "alias": "A"},
+        {"id": 2, "name": "Fico preocupado com como os dados serão manipulados no backend, para garantir que o sistema funcione de maneira eficiente", "alias": "B"},
+        {"id": 3, "name": "Fico atento a como os dados são coletados, armazenados e processados para gerar insights e relatórios úteis", "alias": "C"}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Como você aborda a resolução de problemas técnicos complexos?",
+      "options": [
+        {"id": 1, "name": "Eu me concentro na experiência do usuário e como a interface irá se comportar diante de diferentes cenários", "alias": "A"},
+        {"id": 2, "name": "Eu gosto de entender a lógica por trás do código e como ele pode ser otimizado para lidar com grandes volumes de requisições", "alias": "B"},
+        {"id": 3, "name": "Eu tento entender os dados em profundidade, procurando por padrões e outliers para gerar insights e otimizar as decisões", "alias": "C"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Quando você escolhe uma ferramenta ou tecnologia, qual é o principal critério?",
+      "options": [
+        {"id": 1, "name": "Escolho tecnologias que ajudem a criar interfaces rápidas, responsivas e com bom design", "alias": "A"},
+        {"id": 2, "name": "Escolho tecnologias que otimizam a escalabilidade, segurança e desempenho do sistema", "alias": "B"},
+        {"id": 3, "name": "Escolho ferramentas que permitem extrair, transformar e visualizar dados de maneira eficaz", "alias": "C"}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual abordagem você prefere ao lidar com dados?",
+      "options": [
+        {"id": 1, "name": "Eu lido com dados focando na sua apresentação visual e interatividade, garantindo uma boa experiência ao usuário", "alias": "A"},
+        {"id": 2, "name": "Eu lido com dados focando em como processá-los de maneira eficiente e segura no backend", "alias": "B"},
+        {"id": 3, "name": "Eu lido com dados buscando entender seu significado e transformá-los em informações acionáveis", "alias": "C"}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Quando surge um erro em produção, qual é a sua principal prioridade?",
+      "options": [
+        {"id": 1, "name": "Corrigir a falha na interface, garantindo que o usuário continue tendo uma experiência fluida", "alias": "A"},
+        {"id": 2, "name": "Investigar os logs, identificar o problema no código e garantir que o sistema volte a funcionar corretamente", "alias": "B"},
+        {"id": 3, "name": "Analisar os dados envolvidos, tentar identificar a origem do erro e ajustar os relatórios gerados", "alias": "C"}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Como você lida com a escalabilidade de sistemas?",
+      "options": [
+        {"id": 1, "name": "Eu me preocupo com a criação de interfaces que se adaptem a diferentes dispositivos e que sejam rápidas para os usuários", "alias": "A"},
+        {"id": 2, "name": "Eu me concentro em otimizar a infraestrutura do backend para suportar uma grande quantidade de requisições", "alias": "B"},
+        {"id": 3, "name": "Eu analiso o volume de dados e as possíveis estratégias de distribuição e armazenamento eficientes", "alias": "C"}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Qual é o seu enfoque ao trabalhar em equipe?",
+      "options": [
+        {"id": 1, "name": "Foco em colaborar com designers e outros desenvolvedores para criar a melhor experiência visual possível", "alias": "A"},
+        {"id": 2, "name": "Foco em colaborar com outros desenvolvedores backend e garantir a integridade e performance do sistema", "alias": "B"},
+        {"id": 3, "name": "Foco em trabalhar com diferentes equipes para entender os dados e gerar análises que ajudem em decisões estratégicas", "alias": "C"}
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Como você lida com as novas tecnologias e atualizações no seu campo?",
+      "options": [
+        {"id": 1, "name": "Sempre estou atento às novidades sobre frameworks de front-end e técnicas para melhorar a interação do usuário", "alias": "A"},
+        {"id": 2, "name": "Estou sempre aprendendo novas ferramentas para otimizar o desempenho, segurança e escalabilidade do backend", "alias": "B"},
+        {"id": 3, "name": "Estou sempre aprendendo novas técnicas de análise e visualização de dados para obter insights mais precisos", "alias": "C"}
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Quando você recebe um conjunto de dados, qual é o seu primeiro passo?",
+      "options": [
+        {"id": 1, "name": "Eu procuro visualizar os dados para entender como podem ser apresentados ao usuário", "alias": "A"},
+        {"id": 2, "name": "Eu começo a processar os dados para garantir que possam ser manipulados de forma eficiente no backend", "alias": "B"},
+        {"id": 3, "name": "Eu analiso os dados, procurando por padrões ou anomalias para gerar insights acionáveis", "alias": "C"}
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Quais ferramentas você usa com mais frequência?",
+      "options": [
+        {"id": 1, "name": "Ferramentas como React, Vue.js, Angular e outras tecnologias voltadas para o front-end", "alias": "A"},
+        {"id": 2, "name": "Ferramentas como Node.js, Django, Flask, Ruby on Rails e bancos de dados como PostgreSQL, MySQL", "alias": "B"},
+        {"id": 3, "name": "Ferramentas como Python, R, Power BI, Tableau, SQL e outras ferramentas de análise e visualização de dados", "alias": "C"}
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Como você aborda a segurança em seu trabalho?",
+      "options": [
+        {"id": 1, "name": "Foco em garantir que a interface seja segura contra ataques de XSS, CSRF e outros", "alias": "A"},
+        {"id": 2, "name": "Foco em garantir que a comunicação com o backend seja segura, utilizando autenticação e criptografia", "alias": "B"},
+        {"id": 3, "name": "Foco em garantir que os dados sensíveis sejam processados e armazenados de forma segura, com políticas de privacidade adequadas", "alias": "C"}
+      ]
     }
+  ],
+  "results": {
+    "A": "Você tem um perfil de desenvolvedor Front-end!",
+    "B": "Você tem um perfil de desenvolvedor Back-end!",
+    "C": "Você tem um perfil de Analista de Dados!"
   }
+}
